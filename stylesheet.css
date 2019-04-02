@@ -1,1 +1,26 @@
-styleguide.css
+
+body {
+	background-image: "background.jpg";
+	background-image: url(images/background.jpg);
+	margin: 150px;
+}
+img {
+	width: 100%;
+	border: 1px solid #fff;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+.images {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 2rem;
+}
+.onemonth {
+  position: absolute;
+  bottom: 4px;
+  color: #fff;
+}
