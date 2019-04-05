@@ -1,26 +1,32 @@
 
 body {
-	background-image: "background.jpg";
-	background-image: url(images/background.jpg);
-	margin: 150px;
+	min-height: 100vh;
+	background-color: #fafafa;
+	margin: 100px;
 }
-img {
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+.gallery-item {
+	flex: 1 0 24rem;
+	margin: 1rem;
+	overflow: hidden;
+}
+.gallery-image {
+	display: block;
 	width: 100%;
-	border: 1px solid #fff;
-	margin-right: 50px;
-	margin-bottom: 50px;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
 }
-.images {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-}
-h1 {
-	color: #fff;
-	text-align: center;
-	font-size: 2rem;
-}
-.onemonth {
-  position: absolute;
-  bottom: 4px;
-  color: #fff;
+.gallery-image:hover {
+	transform: scale(1.15);
 }
